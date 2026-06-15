@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class AddTwoNumbers {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Taking input from the user
+        System.out.print("Enter the first number: ");
+        int num1 = sc.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = sc.nextInt();
+
+        // Calculating the sum
+        int sum = num1 + num2;
+
+        // Displaying the result
+        System.out.println("Sum = " + sum);
+
+        sc.close();
+    }
+}
