@@ -1,0 +1,26 @@
+========== NEW REPORT ==========
+Student: John
+Average Marks: 87.67
+Grade: B
+
+Student: Alice
+Average Marks: 80.00
+Grade: B
+
+Student: Bob
+Average Marks: 92.00
+Grade: A
+
+========== NEW REPORT ==========
+Student: John
+Average Marks: 87.67
+Grade: B
+--------------------------
+Student: Alice
+Average Marks: 80.00
+Grade: B
+--------------------------
+Student: Bob
+Average Marks: 92.00
+Grade: A
+--------------------------
