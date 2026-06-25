@@ -64,11 +64,11 @@ class ContentModerator implements TextModeration, SpamDetection {
             System.out.println("\nPost: " + post);
 
             if (checkText(post)) {
-                System.out.println("Status: OFFENSIVE ❌");
+                System.out.println("Status: OFFENSIVE ");
             } else if (isSpam(post)) {
-                System.out.println("Status: SPAM ⚠️");
+                System.out.println("Status: SPAM ");
             } else {
-                System.out.println("Status: VALID ✅");
+                System.out.println("Status: VALID ");
             }
         }
     }
