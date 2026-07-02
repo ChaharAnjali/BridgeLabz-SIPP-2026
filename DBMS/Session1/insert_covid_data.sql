@@ -1,0 +1,20 @@
+-- Insert data for India
+INSERT INTO covid_cases
+VALUES ('India', '2021-01-01', 10300000, 9900000, 1380004385);
+
+INSERT INTO covid_cases
+VALUES ('India', '2021-02-01', 10700000, 10350000, 1380004385);
+
+-- Insert data for USA
+INSERT INTO covid_cases
+VALUES ('USA', '2021-01-01', 20000000, 0, 331002651);
+
+INSERT INTO covid_cases
+VALUES ('USA', '2021-02-01', 26000000, 0, 331002651);
+
+-- Insert data for UK
+INSERT INTO covid_cases
+VALUES ('UK', '2021-01-01', 2500000, 1800000, 67886011);
+
+INSERT INTO covid_cases
+VALUES ('UK', '2021-02-01', 3800000, 2500000, 67886011);
