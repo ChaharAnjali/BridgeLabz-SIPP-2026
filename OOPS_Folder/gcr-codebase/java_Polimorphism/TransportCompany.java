@@ -1,4 +1,3 @@
-package java_Polimorphism;
 
 class Vehicle {
     public double fuelCost(int km) {
@@ -9,29 +8,28 @@ class Vehicle {
 class Car extends Vehicle {
     @Override
     public double fuelCost(int km) {
-        return km * 8; // Rs. 8 per km
+        return km * 8;
     }
 }
 
 class Bus extends Vehicle {
     @Override
     public double fuelCost(int km) {
-        return km * 15; // Rs. 15 per km
+        return km * 15;
     }
 }
 
 class Bike extends Vehicle {
     @Override
     public double fuelCost(int km) {
-        return km * 3; // Rs. 3 per km
+        return km * 3;
     }
 }
 
-// New class added without modifying existing classes
 class ElectricCar extends Vehicle {
     @Override
     public double fuelCost(int km) {
-        return km * 2; // Electricity cost
+        return km * 2;
     }
 }
 

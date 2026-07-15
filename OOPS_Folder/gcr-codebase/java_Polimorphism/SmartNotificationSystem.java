@@ -1,4 +1,3 @@
-package java_Polimorphism;
 
 class Notification {
     String recipientName;
