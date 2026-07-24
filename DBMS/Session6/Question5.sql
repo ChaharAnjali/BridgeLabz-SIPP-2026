@@ -1,0 +1,61 @@
+
+START TRANSACTION;
+
+UPDATE vaccine_distribution
+SET Doses_Distributed = 60000
+WHERE Vaccine_ID = 101;
+
+
+
+SET SESSION TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+START TRANSACTION;
+
+SELECT *
+FROM vaccine_distribution
+WHERE Vaccine_ID = 101;
+
+COMMIT;
+
+
+
+
+SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;
+
+START TRANSACTION;
+
+SELECT *
+FROM vaccine_distribution
+WHERE Vaccine_ID = 101;
+
+COMMIT;
+
+
+
+
+SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+
+START TRANSACTION;
+
+SELECT *
+FROM vaccine_distribution
+WHERE Country = 'India';
+
+SELECT *
+FROM vaccine_distribution
+WHERE Country = 'India';
+
+COMMIT;
+
+
+-- Prevent Phantom Reads using SERIALIZABLE
+
+SET SESSION TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+START TRANSACTION;
+
+SELECT *
+FROM vaccine_distribution
+WHERE Country = 'India';
+
+COMMIT;
